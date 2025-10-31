@@ -13,19 +13,6 @@ This site is deployed via GitHub Actions to GitHub Pages. The site will be avail
 
 ### Video Background
 
-The video file (`video1.MP4`) is too large (110MB) for GitHub's file size limit. To add the video background:
+The video file has been compressed using ffmpeg from 110MB to 4.4MB and is now included in the repository. The compressed video (`dist/video1.MP4`) uses H.264 encoding with CRF 28 for a good balance between quality and file size.
 
-1. **Option 1: Host on GitHub Releases**
-   - Go to your repository's Releases section
-   - Create a new release and upload `video1.MP4`
-   - Update `dist/index.html` to reference the release URL
-
-2. **Option 2: Use a CDN**
-   - Upload `video1.MP4` to a CDN (e.g., Cloudinary, Imgur, or similar)
-   - Update the `src` attribute in `dist/index.html` to point to the CDN URL
-
-3. **Option 3: Self-host locally**
-   - Keep the video file in the `dist` folder locally
-   - The site will work when served from your local `dist` folder
-
-Currently, the video reference points to `./video1.MP4` which will work when the video is present in the same directory as `index.html`.
+The original uncompressed video (`video1.MP4`) is excluded from the repository via `.gitignore` but can be used locally if needed.
