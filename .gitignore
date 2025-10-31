@@ -19,3 +19,9 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
+# Large video files (use external hosting or GitHub Releases)
+*.MP4
+*.mp4
+video1.MP4
+dist/video1.MP4
+
