@@ -19,9 +19,9 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Large video files (original uncompressed in root)
-/video1.MP4
-# Allow videos in videos folders
-!dist/videos/
-!src/videos/
+# Original uncompressed video files (large files, not needed in repo)
+assets/original-videos/
+*.MP4
+!dist/videos/*.MP4
+!src/videos/*.MP4
 
